@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 jobs:
-  continuous-integration:
+  Continuous-Integration:
     runs-on: ubuntu-latest
 
     steps:
@@ -33,8 +33,8 @@ jobs:
         doker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
-Continuous-deployment:
-    needs: continuous-integration
+Continuous-Deployment:
+    needs: Continuous-Integration
     runs-on: self-hosted
 
     steps:
