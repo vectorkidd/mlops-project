@@ -6,6 +6,7 @@ on:
     paths-ignore:
       - 'notebook/**'
       - '**/*.ipynb'
+      - '*.md'
 
 jobs:
   Continuous-Integration:
